@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <GifPicker :gif="gif" @like="like" @dislike="dislike" @loaded="ready"/>
-    <button @click="newGif" class="button is-link">Следущая гифка</button>
+    <br>
+    <button @click="newGif" class="button is-link is-rounded">Следущая гифка</button>
+    <br>
     <GifList color="success" :msg="'Понравилось'" @del="dellike" :list="likedGifs">Понравилось</GifList>
     <br>
     <GifList color="danger" :msg="'Не понравилось'" @del="deldislike" :list="dislikedGifs">Не понравилось</GifList>
